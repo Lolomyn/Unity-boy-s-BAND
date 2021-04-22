@@ -14,7 +14,7 @@ public class BasketBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y <= 2.3)
+        if (transform.position.y <= -1f)
         {
             transform.position = startPosition;
             GetComponent<Rigidbody>().velocity = Vector3.zero;

@@ -2079,7 +2079,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960399564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.705, y: 4.683, z: 3.978}
+  m_LocalPosition: {x: 2.488, y: 4.61, z: 4.021}
   m_LocalScale: {x: 0.052239116, y: 0.0003362251, z: 0.04454393}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2862,7 +2862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 475244, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3183031
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 475244, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2932,8 +2932,8 @@ GameObject:
   - component: {fileID: 1330880034}
   - component: {fileID: 1330880033}
   - component: {fileID: 1330880032}
-  - component: {fileID: 1330880031}
   - component: {fileID: 1330880030}
+  - component: {fileID: 1330880031}
   m_Layer: 0
   m_Name: duga_trigger
   m_TagString: Untagged
@@ -2953,8 +2953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 541dc307de19064468809a00217f7620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &1330880031
-BoxCollider:
+--- !u!64 &1330880031
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2963,9 +2963,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1330880032
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3024,7 +3025,7 @@ Transform:
   m_GameObject: {fileID: 1330880029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.42, y: 4.6343064, z: 1}
-  m_LocalScale: {x: 11.513, y: 12.899053, z: 0.087313}
+  m_LocalScale: {x: 11.513, y: 12.899053, z: 0.00000001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -4075,6 +4076,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c53230e409c1d49448a0305ab223100e, type: 3}
       propertyPath: m_Name
       value: B_Area
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c53230e409c1d49448a0305ab223100e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2224033708523030905, guid: c53230e409c1d49448a0305ab223100e, type: 3}
       propertyPath: m_LocalScale.x

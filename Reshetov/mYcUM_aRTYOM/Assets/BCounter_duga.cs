@@ -10,7 +10,7 @@ public class BCounter_duga : MonoBehaviour
         Score_duga = 3;
         print(Score_duga);
         StartCoroutine(Coroutine());
-    } 
+    }  
 
     private IEnumerator Coroutine()
     {
