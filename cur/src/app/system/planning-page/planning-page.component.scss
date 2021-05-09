@@ -1,0 +1,119 @@
+.content {
+  margin-left:41vh;
+  margin-right:41vh;
+  margin-top:5vh;
+  font-size: 23px;
+  background: white;
+  padding: 30px;
+}
+.at {
+  text-align: center;
+}
+.column table {
+  //position: absolute;
+  //margin-top: 1px;
+  margin-left: 19%;
+  width: 800px;
+  background-color: black;
+}
+
+.column td {
+  width: 120px;
+  background: burlywood;
+  color: black;
+}
+h4,h3{
+  text-align: center;
+  color: white;
+  background: #30A8E6;
+  font-size: 25px;
+}
+.writerout{
+  position: relative;
+  vertical-align: top;
+  width: 80px;
+  height: 30px;
+  padding: 0;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #30A8E6;
+  border: 0;
+  border-bottom: 2px solid #30A8E6;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #30A8E6;
+  box-shadow: inset 0 -2px #30A8E6;
+ margin-right: 5vh;
+}
+//////tables\\\\\\\
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  border-collapse: collapse;
+  color: #686461;
+}
+.column{
+  width: 100%;
+}
+caption {
+  padding: 10px;
+  color: white;
+  background: #8FD4C1;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+th {
+  border-bottom: 3px solid #B9B29F;
+  //text-align: left;
+  width: 100%;
+  padding: 35px;
+}
+td {
+  padding: 10px;
+}
+.post{
+  width: 20%;
+  text-align: right;
+}
+ .exp{
+  width: 20%;
+   text-align: center;
+}
+ .age1{
+   width: 20%;
+   text-align: right;
+
+ }
+tr:nth-child(odd) {
+  background: white;
+  width: 100%;
+}
+tr:nth-child(even) {
+  background: #E8E6D1;
+}
+.name {
+  width: 25%;
+}
+.card{
+  width: 10%;
+  text-align: center;
+}
+.date{
+  width: 15%;
+}
+.age{
+  width: 10%;
+  text-align: center;
+}
+.diagnosis{
+  width: 20%;
+}
+.do{
+  width: 10%;
+  text-align: right;
+}
+.ima{
+  width: 25%;
+}

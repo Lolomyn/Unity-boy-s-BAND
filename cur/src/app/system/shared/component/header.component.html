@@ -1,0 +1,22 @@
+<div class="headerback">
+</div>
+<div class="header-block">
+  <div class="dropdown-menu">
+        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['bill']"><i class="fa fa-building-o"></i>Главная</a>
+        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['history']"><i class="fa fa-flash"></i>Персонал</a>
+        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['planning']"><i class="fa fa-archive"></i>Пациенты</a>
+        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['records']"><i class="fa fa-plus-square"></i>Записать</a>
+  </div>
+    <div class="dropdown-menu">
+      <a class="nav-link dropdown-item" role="button">
+        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['profile']"><i class="fa fa-building-o"></i>Здравствуйте,
+        {{user.name}}</a>
+      </a>
+      <a class="dropdown-item" (click)="onLogout()">
+       <span>
+         <i class="fa fa-power-off icon"></i>
+          Выйти
+       </span>
+      </a>
+    </div>
+</div>

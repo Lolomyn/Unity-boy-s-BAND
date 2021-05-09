@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
+
+.bill_body{
+  position: relative;
+  margin: auto;
+  margin-top: 15px;
+  font-family: 'Roboto Condensed';
+  height: auto;
+  font-size: 20px;
+  background-color: white;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.button1{
+  color: #666666 !important;
+  font-family: 'Roboto Condensed';
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 10px;
+  border: 2px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+.button1:hover {
+  color: #ffffff !important;
+  background: #666666;
+  border-color: #666666 !important;
+  transition: all 0.4s ease 0s;
+}
+
+footer{
+  position: fixed;
+  background-color: #666666;
+  width: 100%;
+  height: 7%;
+  left: 0;
+  bottom: 0;
+  clear: both;
+}
+
+.footer_title{
+  padding: 5px;
+  position: center;
+  height: auto;
+  font-family:'Roboto Condensed';
+  color: white;
+  text-align: center;
+}
+
+.img_link{
+  padding: 5px;
+}

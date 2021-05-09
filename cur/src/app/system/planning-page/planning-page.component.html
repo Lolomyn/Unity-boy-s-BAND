@@ -1,0 +1,47 @@
+<div class="content">
+<div class = "menu">
+  <h3>Палата дневного стационара</h3>
+  <h4>Врачи</h4>
+  <table class="column">
+    <tr>
+      <th class="ima">Имя</th>
+      <th>Стаж</th>
+      <th>Возраст</th>
+      <th>Должность</th>
+    </tr>
+  </table>
+  <div *ngFor="let Pat of patient1 | async">
+    <table>
+      <tr><td class="name">{{Pat.doctorname}}</td>
+        <td class="exp">{{Pat.experience}}</td>
+        <td class="age1">{{Pat.age}}</td>
+        <td class="post">{{Pat.post}}</td></tr>
+    </table>
+  </div>
+  <h4> Список пациентов ,проходящих лечение в больнице №17 гор. Нижнего Новгорода </h4>
+  <div class = 'patients'>
+      <table class="column">
+        <tr>
+          <th class="ima">Имя</th>
+          <th>Номер карты</th>
+          <th>Дата рождения</th>
+          <th>Возраст</th>
+          <th>Диагноз</th>
+          <th>Действие</th>
+        </tr>
+      </table>
+        <div *ngFor="let pat of patients | async">
+          <table>
+        <tr>
+          <td class="name"> {{pat.patientname}}</td>
+          <td class="card">{{pat.cardid}}</td>
+          <td class="date">{{pat.date}}</td>
+          <td class="age">{{pat.age}}</td>
+          <td class="diagnosis">{{pat.diagnosis}}</td>
+          <td class="do"><button class="writerout" (click)="deletePatient(pat)">Выписать</button></td>
+        </tr>
+        </table>
+    </div>
+  </div>
+</div>
+</div>

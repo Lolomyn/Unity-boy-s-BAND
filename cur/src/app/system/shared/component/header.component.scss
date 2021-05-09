@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.headerback, {
+  background-image: url("../images/headmainback2.png");
+  height: 200px;
+  background-repeat: round;
+}
+.header-block {
+  height: 10vh;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-block ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+}
+.header-block a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#30A8E6; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:10px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  border-radius:4px; /*добавляем скругление*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+}
+.header-block a:hover {
+  background:#1C85BB;/*добавляем эффект при наведении*/
+}
+.header-block li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  margin-right:5px; /*Добавляем отступ у пунктов меню*/
+
+}
+.dropdown-item {
+margin-right: 1rem;
+  &:active{
+    background: #515151;
+  }
+  padding: 0.5rem 1.5rem;
+  &:last-child{
+    margin: 0;
+  }
+}
+.dropdown-menu {
+  margin: 0 1rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}

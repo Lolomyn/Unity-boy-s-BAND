@@ -1,0 +1,44 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="sign-up">
+  <div class="form-group"
+       [ngClass]="{'has-error': form.get('login').invalid && form.get('login').touched}">
+    <h1 class="sign-up-title">Авторизация</h1>
+    <div class="alert alert-{{message.type}}"
+         *ngIf="message.text">
+      {{message.text}}</div>
+
+    <input type="text" class="sign-up-input" id="email" placeholder="Логин" formControlName="login">
+    <span
+      class="form-help-text"
+      *ngIf="form.get('login').invalid && form.get('login').touched">
+    <span *ngIf="form.get('login')['errors']['required']">Логин не может быть пустым</span>
+    <span *ngIf="form.get('login')['errors']['maxlength']">Логин должен быть меньше
+        {{form.get('login')['errors']['maxlength']['requiredLength']}} символов. Сейчас
+        {{form.get('login')['errors']['maxlength']['actualLength']}}
+    </span>
+  </span>
+  </div>
+  <div
+    class="form-group"
+    [ngClass]="{'has-error': form.get('password').invalid && form.get('password').touched}">
+    <input type="password" class="sign-up-input" id="password" placeholder="Пароль" formControlName="password">
+    <span
+      class="form-help-text"
+      *ngIf="form.get('password').invalid && form.get('password').touched">
+    <span *ngIf="form.get('password')['errors']['required']">Пароль не может быть пустым</span>
+    <span *ngIf="form.get('password')['errors']['maxlength']">Пароль должен быть меньше
+      {{form.get('password')['errors']['maxlength']['requiredLength']}} символов. Сейчас
+      {{form.get('password')['errors']['maxlength']['actualLength']}}
+    </span>
+  </span>
+  </div>
+  <div class="form-group">
+    <button type="submit"
+            class="sign-up-button"
+            [disabled]="form.invalid"
+    >Войти!
+    </button>
+  </div>
+</form>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<p class="lable"> Образовательная платформа «НГТУ им. Р.Е. Алексеева </p>
+

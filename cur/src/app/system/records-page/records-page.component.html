@@ -1,0 +1,17 @@
+<div class="content">
+  <div class = "Add">
+    <h3>Хотите добавить пациентов?</h3>
+    <form [formGroup]= "form" (ngSubmit)="onSubmit1()">
+      <label>
+        <input type = "text" formControlName="Name" placeholder="Имя пациента" class="pat">
+        <input type = "text" formControlName="Card" placeholder="Номер карты" class="card">
+        <input type = "text" formControlName="Date" placeholder="Дата рождения" class="date">
+        <input type = "text" formControlName="Age" placeholder="Возраст" class="age">
+        <input type = "text" formControlName="Diagnosis" placeholder="Диагноз" class="diagnos">
+      </label>
+      <button class="writerout" type="submit">Добавить </button>
+      <br>
+    </form>
+  </div>
+</div>
+
