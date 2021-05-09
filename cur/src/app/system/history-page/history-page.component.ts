@@ -13,7 +13,7 @@ export class HistoryPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    document.getElementById('doctor1').style.backgroundImage = this.user.imgUrl;
+
   }
 
   getUser(): any {

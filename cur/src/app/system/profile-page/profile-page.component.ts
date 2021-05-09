@@ -10,7 +10,7 @@ import {AuthService} from '../shared/auth.service';
 export class ProfilePageComponent implements OnInit {
   date: Date = new Date();
   email: User;
-  user: User = JSON.parse(this.getUser());;
+  user: User = JSON.parse(this.getUser());
   constructor(private authService: AuthService,
               private router: Router) {}
 
@@ -18,7 +18,6 @@ export class ProfilePageComponent implements OnInit {
   ngOnInit() {
     this.user = JSON.parse(window.localStorage.getItem('user'));
     this.email = JSON.parse(window.localStorage.getItem('email'));
-    document.getElementById('user1').style.backgroundImage = this.user.imgUrl;
   }
   onLogout() {
     this.authService.logout();
