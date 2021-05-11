@@ -1,11 +1,11 @@
 import {Injectable} from '@angular/core';
-import {DoctorModel} from '../models/doctor.model';
+import {Studying} from '../models/studying';
 import {AddpatientModel} from '../models/addpatient.model';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import {Observable, of} from 'rxjs';
 import {catchError, tap} from 'rxjs/operators';
 @Injectable()
-export class PatientService {
+export class StudyingService {
   private PatientData = 'http://localhost:3000/patients';
   // changePatient(pat: AddpatientModel): Observable<any> {
   //   const httpOptions = {
@@ -26,8 +26,8 @@ export class PatientService {
   getPatients(): Observable<AddpatientModel[]> {
     return this.http.get<AddpatientModel[]>(`http://localhost:3000/patients`);
   }
-  getPatient(): Observable<DoctorModel[]> {
-    return this.http.get<DoctorModel[]>(`http://localhost:3000/doctor1`);
+  getStudying(): Observable<Studying[]> {
+    return this.http.get<Studying[]>(`http://localhost:3000/studying`);
   }
 
 }

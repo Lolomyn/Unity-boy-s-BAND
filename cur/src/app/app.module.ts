@@ -12,7 +12,7 @@ import {FormsModule} from '@angular/forms';
 import {SystemModule} from './system/system.module';
 import {AuthGuard} from './system/shared/auth/auth.guard';
 import {AddService} from './system/shared/services/add.service';
-import {PatientService} from './system/shared/services/patient.service';
+import {StudyingService} from './system/shared/services/studying.service';
 
 
 @NgModule({
@@ -23,12 +23,12 @@ import {PatientService} from './system/shared/services/patient.service';
     BrowserModule,
     HttpClientModule,
     HttpModule,
-   AppRoutingModule,
+    AppRoutingModule,
     AuthModule,
     FormsModule,
     SystemModule,
   ],
-  providers: [UsersService, AuthService, AuthGuard, AddService, PatientService],
+  providers: [UsersService, AuthService, AuthGuard, AddService, StudyingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

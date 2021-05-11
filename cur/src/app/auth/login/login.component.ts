@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit {
     private usersService: UsersService,
     private authService: AuthService,
     private router: Router,
-    private route: ActivatedRoute) {
-  }
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -62,7 +62,12 @@ export class LoginComponent implements OnInit {
             this.message.text = '';
             window.localStorage.setItem('user', JSON.stringify(user));
             this.authService.login();
-            this.router.navigate(['/system', 'bill']);
+            switch (user.type) {
+              case ('adm'): this.router.navigate(['/system', 'admin']); break;
+              case ('student'): this.router.navigate(['/system', 'student']); break;
+              case ('prepod'): this.router.navigate(['/system', 'prepod']); break;
+            }
+            // this.router.navigate(['/system', 'student']);
           } else {
             this.showMessage
             ({

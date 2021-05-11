@@ -3,7 +3,7 @@ import {Observable} from 'rxjs';
 import {Http} from '@angular/http';
 import {BaseApi} from '../core/base-api';
 import {AddpatientModel} from '../models/addpatient.model';
-import {DoctorModel} from '../models/doctor.model';
+import {Studying} from '../models/studying';
 
 
 @Injectable()

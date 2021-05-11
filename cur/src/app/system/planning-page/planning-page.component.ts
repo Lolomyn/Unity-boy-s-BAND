@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {AddService} from '../shared/services/add.service';
-import {PatientService} from '../shared/services/patient.service';
+import {StudyingService} from '../shared/services/studying.service';
 import {AddpatientModel} from '../shared/models/addpatient.model';
 
 @Component({
@@ -11,8 +11,8 @@ import {AddpatientModel} from '../shared/models/addpatient.model';
 })
 export class PlanningPageComponent implements OnInit {
   form: FormGroup;
-  patient1 = this.patientService.getPatient(); patients = this.patientService.getPatients();
-  constructor(private addService: AddService, private patientService: PatientService) { }
+  studying = this.patientService.getStudying(); patients = this.patientService.getPatients();
+  constructor(private addService: AddService, private patientService: StudyingService) { }
 
   // changePatient(pat: AddpatientModel): void {
   //   this.patientService.changePatient(pat).subscribe();

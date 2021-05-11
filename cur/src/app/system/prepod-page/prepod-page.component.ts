@@ -2,11 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {User} from '../shared/models/user.model';
 
 @Component({
-  selector: 'app-history-page',
-  templateUrl: './history-page.component.html',
-  styleUrls: ['./history-page.component.scss']
+  selector: 'app-prepod-page',
+  templateUrl: './prepod-page.component.html',
+  styleUrls: ['./prepod-page.component.scss']
 })
-export class HistoryPageComponent implements OnInit {
+export class PrepodPageComponent implements OnInit {
   user: User = JSON.parse(this.getUser());
 
   constructor() {

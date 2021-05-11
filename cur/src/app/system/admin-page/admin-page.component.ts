@@ -2,16 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import {AddpatientModel} from '../shared/models/addpatient.model';
 import {FormControl, FormGroup} from '@angular/forms';
 import {AddService} from '../shared/services/add.service';
-import {PatientService} from '../shared/services/patient.service';
+import {StudyingService} from '../shared/services/studying.service';
 
 @Component({
   selector: 'app-records-page',
-  templateUrl: './records-page.component.html',
-  styleUrls: ['./records-page.component.scss']
+  templateUrl: './admin-page.component.html',
+  styleUrls: ['./admin-page.component.scss']
 })
-export class RecordsPageComponent implements OnInit {
+export class AdminPageComponent implements OnInit {
   form: FormGroup;
-  constructor(private addService: AddService, private patientService: PatientService) { }
+  constructor(private addService: AddService, private patientService: StudyingService) { }
 
   ngOnInit() {
     this.form = new FormGroup({

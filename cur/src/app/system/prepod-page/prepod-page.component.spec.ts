@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HistoryPageComponent } from './history-page.component';
+import { PrepodPageComponent } from './prepod-page.component';
 
-describe('HistoryPageComponent', () => {
-  let component: HistoryPageComponent;
-  let fixture: ComponentFixture<HistoryPageComponent>;
+describe('PrepodPageComponent', () => {
+  let component: PrepodPageComponent;
+  let fixture: ComponentFixture<PrepodPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HistoryPageComponent ]
+      declarations: [ PrepodPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HistoryPageComponent);
+    fixture = TestBed.createComponent(PrepodPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
