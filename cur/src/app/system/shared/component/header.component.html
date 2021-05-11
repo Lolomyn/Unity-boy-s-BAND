@@ -1,21 +1,16 @@
 <div class="headerback">
 </div>
 <div class="header-block">
-  <div class="dropdown-menu">
-        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['student']"><i class="fa fa-building-o"></i>Студент</a>
-        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['prepod']"><i class="fa fa-flash"></i>Преподаватель</a>
-        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['planning']"><i class="fa fa-flash"></i>Тест</a>
-        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['admin']"><i class="fa fa-plus-square"></i>Администратор</a>
-  </div>
+  <div class="ngtu"> [PIC] НГТУ им. Р.Е. Алексеева </div>
     <div class="dropdown-menu">
       <a class="nav-link dropdown-item" role="button">
-        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['profile']"><i class="fa fa-building-o"></i>Здравствуйте,
-        {{user.name}}</a>
+        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['profile']"><i class="fa fa-building-o"></i>
+          {{user.name}} ({{user.type}})</a>
       </a>
       <a class="dropdown-item" (click)="onLogout()">
        <span>
          <i class="fa fa-power-off icon"></i>
-          Выйти
+          X
        </span>
       </a>
     </div>

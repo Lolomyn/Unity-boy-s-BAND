@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     const formData = this.form.value;
-    this.usersService.getUserByEmail(formData.login)
+    this.usersService.getUserByLogin(formData.login)
       .subscribe((user: User) => {
         if (user) {
           if (user.password === formData.password) {
@@ -63,9 +63,9 @@ export class LoginComponent implements OnInit {
             window.localStorage.setItem('user', JSON.stringify(user));
             this.authService.login();
             switch (user.type) {
-              case ('adm'): this.router.navigate(['/system', 'admin']); break;
-              case ('student'): this.router.navigate(['/system', 'student']); break;
-              case ('prepod'): this.router.navigate(['/system', 'prepod']); break;
+              case ('администратор'): this.router.navigate(['/system', 'admin']); break;
+              case ('студент'): this.router.navigate(['/system', 'student']); break;
+              case ('преподаватель'): this.router.navigate(['/system', 'prepod']); break;
             }
             // this.router.navigate(['/system', 'student']);
           } else {

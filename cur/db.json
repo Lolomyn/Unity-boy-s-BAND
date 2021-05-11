@@ -3,71 +3,71 @@
     {
       "login": "god",
       "password": "12345678",
-      "name": "Administrator",
-      "type": "adm",
+      "name": "Администратор",
+      "type": "администратор",
       "id": 1
     },
     {
       "login": "Egorov",
       "password": "12345678",
-      "name": "Egorov",
-      "type": "prepod",
+      "name": "Егоров Юрий Сергеевич",
+      "type": "преподаватель",
       "id": 2
     },
     {
       "login": "art_shut",
       "password": "12345678",
-      "name": "Shutoff",
-      "type": "student",
+      "name": "Шутов Артем Алексеевич",
+      "type": "студент",
       "id": 3
     },
     {
       "login": "max_sav",
       "password": "12345678",
-      "name": "Savelev",
-      "type": "student",
+      "name": "Савельев Максим Александрович",
+      "type": "студент",
       "id": 4
     },
     {
       "login": "art_grig",
       "password": "12345678",
-      "name": "Grigoryan",
-      "type": "student",
+      "name": "Григорян Артур Арманович",
+      "type": "студент",
       "id": 5
     },
     {
       "login": "alex_ryz",
       "password": "12345678",
       "name": "Ryzhov",
-      "type": "student",
+      "type": "студент",
       "id": 6
     },
     {
       "login": "dm_krup",
       "password": "12345678",
       "name": "Krupnov",
-      "type": "student",
+      "type": "студент",
       "id": 7
     },
     {
       "login": "kate_max",
       "password": "12345678",
       "name": "Maximova",
-      "type": "student",
+      "type": "студент",
       "id": 8
     },
     {
       "login": "dan_mir",
       "password": "12345678",
       "name": "Miroshkin",
-      "type": "student",
+      "type": "студент",
       "id": 9
     },
     {
       "login": "nik_sav",
       "password": "12345678",
       "name": "Savchienkov",
-      "type": "student",
+      "type": "студент",
       "id": 10
     }
   ],
@@ -97,6 +97,30 @@
       "age": 0,
       "diagnosis": "null",
       "id": 3
+    },
+    {
+      "patientname": "null",
+      "cardid": 0,
+      "date": "null",
+      "age": 0,
+      "diagnosis": "null",
+      "id": 4
+    },
+    {
+      "patientname": "null",
+      "cardid": 0,
+      "date": "null",
+      "age": 0,
+      "diagnosis": "null",
+      "id": 5
+    },
+    {
+      "patientname": "А",
+      "cardid": null,
+      "date": "О",
+      "age": null,
+      "diagnosis": "А",
+      "id": 6
     }
   ]
 }
