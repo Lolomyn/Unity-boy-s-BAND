@@ -24,12 +24,13 @@ export class RegistrationsComponent implements OnInit {
       password: new FormControl(null, [Validators.required, Validators.minLength(8)]),
       name: new FormControl(null, [Validators.required]),
       type: new FormControl(null, [Validators.required]),
+      group: new FormControl(null, [Validators.required]),
     });
   }
 
   onSubmit() {
-    const {email, password, name, type} = this.form.value;
-    const user = new User(email, password, name, type);
+    const {email, password, name, type, group} = this.form.value;
+    const user = new User(email, password, name, type, group);
     this.usersService.createNewUser(user)
       .subscribe(() => {
         this.router.navigate(['/login'], {

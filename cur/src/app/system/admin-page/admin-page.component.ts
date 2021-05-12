@@ -22,6 +22,7 @@ export class AdminPageComponent implements OnInit {
       login: new FormControl(),
       password: new FormControl(),
       type: new FormControl(),
+      group: new FormControl()
     });
   }
   onSubmit1() {
@@ -30,7 +31,8 @@ export class AdminPageComponent implements OnInit {
     const login = String(formData.login);
     const password = String(formData.password);
     const type = String(formData.type);
-    const user = new User(name, login, password, type);
+    const group = String(formData.group);
+    const user = new User(name, login, password, type, group);
     this.addService.User(user)
       .subscribe(() => {
         alert('Добавлено!');

@@ -9,6 +9,7 @@
 
   <div *ngFor="let User of user | async">
     <table>
+      <button type="edit">Редактировать</button>
       <tr class="id">ID Пользователя: {{User.id}}</tr>
       <tr class="name">ФИО: {{User.name}}</tr>
       <tr class="login">Логин: {{User.login}}</tr>
@@ -21,6 +22,7 @@
 </div>
 
 <div class ="main">
+  <div class="menu2">
   <p> Добавить: пользователя </p>
   <p> ID пользователя: ??? </p>
   <form [formGroup]= "form" (ngSubmit)="onSubmit1()">
@@ -28,9 +30,34 @@
       <input type = "text" formControlName="name" placeholder="ФИО" class="name">
       <input type = "text" formControlName="login" placeholder="Логин" class="login">
       <input type = "text" formControlName="password" placeholder="Пароль" class="password">
-      <input type = "text" formControlName="type" placeholder="Роль" class="type">
+      <select class="type" formControlName="type" placeholder="Роль">
+        <option>Студент</option>
+        <option>Преподаватель</option>
+      </select>
+      <input type = "text" formControlName="group" placeholder="Группа" class="group">
     </label>
     <button class="writerout" type="submit">Добавить </button>
     <br>
   </form>
+</div>
+</div>
+<div class ="editpage">
+  <div class="editpage2">
+  <p> Редактировать: пользователя </p>
+  <p> ID пользователя: 1 </p>
+  <form [formGroup]= "form" (ngSubmit)="onSubmit1()">
+    <label>
+      <input type = "text" formControlName="name" placeholder="ФИО" class="name">
+      <input type = "text" formControlName="login" placeholder="Логин" class="login">
+      <input type = "text" formControlName="password" placeholder="Пароль" class="password">
+      <select class="type" formControlName="type" placeholder="Роль">
+        <option>Студент</option>
+        <option>Преподаватель</option>
+      </select>
+      <input type = "text" formControlName="group" placeholder="Группа" class="group">
+    </label>
+    <button class="writerout" type="submit">Сохранить</button>
+    <br>
+  </form>
+  </div>
 </div>
