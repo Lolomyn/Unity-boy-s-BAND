@@ -64,10 +64,10 @@
       "id": 9
     },
     {
-      "login": "nik_sav",
-      "password": "12345678",
-      "name": "Savchienkov",
-      "type": "Студент",
+      "login": "undefined",
+      "password": "undefined",
+      "name": "undefined",
+      "type": "undefined",
       "id": 10
     }
   ],
@@ -80,8 +80,5 @@
       "content": "Тут контент короче, даа. Счастья, здоровья всем!",
       "id": 1
     }
-  ],
-  "patients": [
-
   ]
 }

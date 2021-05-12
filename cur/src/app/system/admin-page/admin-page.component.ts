@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {AddpatientModel} from '../shared/models/addpatient.model';
+import {AddUserModel} from '../shared/models/adduser.model';
+import {User} from '../shared/models/user.model';
 import {FormControl, FormGroup} from '@angular/forms';
 import {AddService} from '../shared/services/add.service';
 import {StudyingService} from '../shared/services/studying.service';
@@ -24,16 +25,15 @@ export class AdminPageComponent implements OnInit {
     });
   }
   onSubmit1() {
-    // const formData = this.form.value;
-    // const pat = String(formData.Name);
-    // const card = Number(formData.Card);
-    // const date = String(formData.Date);
-    // const age = Number(formData.Age);
-    // const diagnos = String(formData.Diagnosis);
-    // const patient = new AddpatientModel(pat, card, date, age, diagnos);
-    // this.addService.Patient(patient)
-    //   .subscribe(() => {
-    //     alert('Добавлено!');
-    //   });
+    const formData = this.form.value;
+    const name = String(formData.Name);
+    const login = String(formData.Login);
+    const password = String(formData.Password);
+    const type = String(formData.Type);
+    const user = new User(name, login, password, type);
+    this.addService.User(user)
+      .subscribe(() => {
+        alert('Добавлено!');
+      });
   }
 }

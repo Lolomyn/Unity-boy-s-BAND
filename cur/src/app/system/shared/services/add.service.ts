@@ -2,18 +2,19 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {Http} from '@angular/http';
 import {BaseApi} from '../core/base-api';
-import {AddpatientModel} from '../models/addpatient.model';
+import {User} from '../models/user.model';
+import {AddUserModel} from '../models/adduser.model';
 import {Studying} from '../models/studying';
 
 
 @Injectable()
 export class AddService extends BaseApi {
-private PatientData = 'http://localhost:3000/patients';
+private UserData = 'http://localhost:3000/users';
 
 constructor(http: Http) {
    super(http);
    }
 
-  Patient(patient: AddpatientModel): Observable<AddpatientModel> {
-   return this.post('patients', patient); }
+  User(user: User): Observable<User> {
+   return this.post('users', user); }
 }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {AddService} from '../shared/services/add.service';
 import {StudyingService} from '../shared/services/studying.service';
-import {AddpatientModel} from '../shared/models/addpatient.model';
+import {AddpatientModel} from '../shared/models/adduser.model';
 
 @Component({
   selector: 'app-planning-page',

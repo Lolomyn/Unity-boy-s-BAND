@@ -69,6 +69,7 @@ export class LoginComponent implements OnInit {
             }
             // this.router.navigate(['/system', 'student']);
           } else {
+            alert('Введен неверный пароль!');
             this.showMessage
             ({
               text: 'Пароль не верный',
@@ -76,6 +77,7 @@ export class LoginComponent implements OnInit {
             });
           }
         } else {
+          alert('Такого пользователя не существует!');
           this.showMessage
           ({
             text: 'Такого пользователя не существует',
