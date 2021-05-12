@@ -14,7 +14,7 @@ import {UsersService} from '../shared/services/users.service';
 export class AdminPageComponent implements OnInit {
   form: FormGroup;
   user = this.studyingService.getUser();
-  constructor(private addService: AddService, private studyingService: StudyingService) { }
+  constructor(private addService: AddService, private studyingService: StudyingService, private  usersService: UsersService) { }
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -26,10 +26,10 @@ export class AdminPageComponent implements OnInit {
   }
   onSubmit1() {
     const formData = this.form.value;
-    const name = String(formData.Name);
-    const login = String(formData.Login);
-    const password = String(formData.Password);
-    const type = String(formData.Type);
+    const name = String(formData.name);
+    const login = String(formData.login);
+    const password = String(formData.password);
+    const type = String(formData.type);
     const user = new User(name, login, password, type);
     this.addService.User(user)
       .subscribe(() => {

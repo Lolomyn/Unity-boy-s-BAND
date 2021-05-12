@@ -62,6 +62,13 @@
       "name": "Miroshkin",
       "type": "Студент",
       "id": 9
+    },
+    {
+      "login": "Савченков Никита Васильевич",
+      "password": "uvision",
+      "name": "87654321",
+      "type": "Студент",
+      "id": 10
     }
   ],
   "studying": [
