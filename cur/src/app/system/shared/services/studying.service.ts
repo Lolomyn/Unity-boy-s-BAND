@@ -4,6 +4,8 @@ import {AddpatientModel} from '../models/addpatient.model';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import {Observable, of} from 'rxjs';
 import {catchError, tap} from 'rxjs/operators';
+import {User} from '../models/user.model';
+
 @Injectable()
 export class StudyingService {
   private PatientData = 'http://localhost:3000/patients';
@@ -28,6 +30,9 @@ export class StudyingService {
   }
   getStudying(): Observable<Studying[]> {
     return this.http.get<Studying[]>(`http://localhost:3000/studying`);
+  }
+  getUser(): Observable<User[]> {
+    return this.http.get<User[]>(`http://localhost:3000/users`);
   }
 
 }

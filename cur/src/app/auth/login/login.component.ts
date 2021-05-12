@@ -63,9 +63,9 @@ export class LoginComponent implements OnInit {
             window.localStorage.setItem('user', JSON.stringify(user));
             this.authService.login();
             switch (user.type) {
-              case ('администратор'): this.router.navigate(['/system', 'admin']); break;
-              case ('студент'): this.router.navigate(['/system', 'student']); break;
-              case ('преподаватель'): this.router.navigate(['/system', 'prepod']); break;
+              case ('Администратор'): this.router.navigate(['/system', 'admin']); break;
+              case ('Студент'): this.router.navigate(['/system', 'student']); break;
+              case ('Преподаватель'): this.router.navigate(['/system', 'prepod']); break;
             }
             // this.router.navigate(['/system', 'student']);
           } else {

@@ -1,17 +1,37 @@
-<div class="content">
-  <div class = "Add">
-    <h3>Хотите добавить преподавателей?</h3>
-    <form [formGroup]= "form" (ngSubmit)="onSubmit1()">
-      <label>
-        <input type = "text" formControlName="Name" placeholder="Имя пациента" class="pat">
-        <input type = "text" formControlName="Card" placeholder="Номер карты" class="card">
-        <input type = "text" formControlName="Date" placeholder="Дата рождения" class="date">
-        <input type = "text" formControlName="Age" placeholder="Возраст" class="age">
-        <input type = "text" formControlName="Diagnosis" placeholder="Диагноз" class="diagnos">
-      </label>
-      <button class="writerout" type="submit">Добавить </button>
-      <br>
-    </form>
+
+
+<div class="sidebar">
+
+  <p>Список пользователей</p>
+  <a class="dropdown-item">
+    <span> <i class="fa fa-power-off icon"></i> + </span>
+  </a> <b>Новый пользователь</b>
+
+  <div *ngFor="let User of user | async">
+    <table>
+      <tr class="id">ID Пользователя: {{User.id}}</tr>
+      <tr class="name">ФИО: {{User.name}}</tr>
+      <tr class="login">Логин: {{User.login}}</tr>
+      <tr class="password">Пароль: {{User.password}}</tr>
+      <tr class="type">Роль: {{User.type}}</tr>
+      <tr>_________________________________________________</tr>
+    </table>
   </div>
+
 </div>
 
+<div class ="main">
+  <p> Добавить: пользователя </p>
+  <p> ID пользователя: ??? </p>
+  <form [formGroup]= "form" (ngSubmit)="onSubmit1()">
+    <label>
+      <input type = "text" formControlName="name" placeholder="ФИО" class="pat">
+      <input type = "text" formControlName="login" placeholder="Логин" class="card">
+      <input type = "text" formControlName="password" placeholder="Пароль" class="date">
+      <input type = "text" formControlName="type" placeholder="Роль" class="age">
+      <input type = "text" formControlName="description" placeholder="Описание" class="diagnos">
+    </label>
+    <button class="writerout" type="submit">Добавить </button>
+    <br>
+  </form>
+</div>

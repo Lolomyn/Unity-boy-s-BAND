@@ -11,14 +11,14 @@ import {AddpatientModel} from '../shared/models/addpatient.model';
 })
 export class PlanningPageComponent implements OnInit {
   form: FormGroup;
-  studying = this.patientService.getStudying(); patients = this.patientService.getPatients();
-  constructor(private addService: AddService, private patientService: StudyingService) { }
+  studying = this.studyingService.getStudying(); patients = this.studyingService.getPatients();
+  constructor(private addService: AddService, private studyingService: StudyingService) { }
 
   // changePatient(pat: AddpatientModel): void {
   //   this.patientService.changePatient(pat).subscribe();
   // }
   deletePatient(pat: AddpatientModel): void {
-    this.patientService.deletePat(pat).subscribe();
+    this.studyingService.deletePat(pat).subscribe();
   }
   ngOnInit() {
     this.form = new FormGroup({

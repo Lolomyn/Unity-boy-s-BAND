@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {Http, Response} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import {User} from '../models/user.model';
+import {Studying} from '../models/studying';
 
 
 @Injectable()
