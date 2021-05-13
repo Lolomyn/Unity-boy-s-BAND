@@ -28,7 +28,7 @@ export class AdminPageComponent implements OnInit {
   }
   deleteThisUser(deleteUser: User): void {
     this.usersService.deleteUserById(deleteUser).subscribe(() => {
-      alert('Рецепт успешно удален');
+      alert('Пользователь успешно удален');
     });
   }
 
