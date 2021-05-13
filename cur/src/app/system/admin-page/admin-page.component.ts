@@ -5,6 +5,7 @@ import {FormControl, FormGroup} from '@angular/forms';
 import {AddService} from '../shared/services/add.service';
 import {StudyingService} from '../shared/services/studying.service';
 import {UsersService} from '../shared/services/users.service';
+import {Observable} from 'rxjs/Observable';
 
 @Component({
   selector: 'app-records-page',
@@ -25,6 +26,12 @@ export class AdminPageComponent implements OnInit {
       group: new FormControl()
     });
   }
+  deleteThisUser(deleteUser: User): void {
+    this.usersService.deleteUserById(deleteUser).subscribe(() => {
+      alert('Рецепт успешно удален');
+    });
+  }
+
   onSubmit1() {
     const formData = this.form.value;
     const name = String(formData.name);

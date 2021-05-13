@@ -10,6 +10,7 @@
   <div *ngFor="let User of user | async">
     <table>
       <button type="edit">Редактировать</button>
+      <button class="delete" (click)="deleteThisUser(User)">Удалить</button>
       <tr class="id">ID Пользователя: {{User.id}}</tr>
       <tr class="name">ФИО: {{User.name}}</tr>
       <tr class="login">Логин: {{User.login}}</tr>

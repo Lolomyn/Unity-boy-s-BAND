@@ -5,6 +5,7 @@
       "password": "12345678",
       "name": "Администратор",
       "type": "Администратор",
+      "group": "none",
       "id": 1
     },
     {
@@ -12,6 +13,7 @@
       "password": "12345678",
       "name": "Егоров Юрий Сергеевич",
       "type": "Преподаватель",
+      "group": "none",
       "id": 2
     },
     {
@@ -19,88 +21,16 @@
       "password": "12345678",
       "name": "Шутов Артем Алексеевич",
       "type": "Студент",
+      "group": "18-ИТД",
       "id": 3
     },
     {
+      "name": "Савельев",
       "login": "max_sav",
       "password": "12345678",
-      "name": "Савельев Максим Александрович",
       "type": "Студент",
+      "group": "18-ИТД",
       "id": 4
-    },
-    {
-      "login": "art_grig",
-      "password": "12345678",
-      "name": "Григорян Артур Арманович",
-      "type": "Студент",
-      "id": 5
-    },
-    {
-      "login": "alex_ryz",
-      "password": "12345678",
-      "name": "Ryzhov",
-      "type": "Студент",
-      "id": 6
-    },
-    {
-      "login": "dm_krup",
-      "password": "12345678",
-      "name": "Krupnov",
-      "type": "Студент",
-      "id": 7
-    },
-    {
-      "login": "kate_max",
-      "password": "12345678",
-      "name": "Maximova",
-      "type": "Студент",
-      "id": 8
-    },
-    {
-      "login": "dan_mir",
-      "password": "12345678",
-      "name": "Miroshkin",
-      "type": "Студент",
-      "id": 9
-    },
-    {
-      "login": "Савченков Никита Васильевич",
-      "password": "uvision",
-      "name": "87654321",
-      "type": "Студент",
-      "id": 10
-    },
-    {
-      "login": "Кудалин А.М.",
-      "password": "masterdog",
-      "name": "12345678",
-      "type": "Студент",
-      "group": "18-СТ",
-      "id": 11
-    },
-    {
-      "name": "1",
-      "login": "2",
-      "password": "3",
-      "type": "4",
-      "group": "5",
-      "id": 12
-    },
-    {
-      "name": "Колясик",
-      "login": "champion",
-      "password": "228",
-      "type": "Студент",
-      "group": "18-КТ",
-      "id": 13
-    },
-    {
-      "name": "Вася",
-      "login": "gavno",
-      "password": "1234568",
-      "type": "Студент",
-      "group": "КТ",
-      "id": 14
     }
   ],
   "studying": [
@@ -115,7 +45,7 @@
     {
       "course": "Управление данными",
       "prepod": "Балашова Татьяна Батьковна",
-      "theme": "Тема №3. Авторегистрация в программе Zenoposter ",
+      "theme": "Тема №3. Авторегистрация в программе ZennoPoster ",
       "section": "Раздел №1. Понятие",
       "content": "Это программа только для продвинутых пользователей",
       "id": 2
