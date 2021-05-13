@@ -1,0 +1,681 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19041.928; Version 2004; 64bit' Language: 'ru' Physical Memory: 16267 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity\2020.2.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Unity Projects/Sharing/Unity-boy-s-BAND/Reshetov/mYcUM_aRTYOM
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58593
+Successfully changed project path to: D:/Unity Projects/Sharing/Unity-boy-s-BAND/Reshetov/mYcUM_aRTYOM
+D:/Unity Projects/Sharing/Unity-boy-s-BAND/Reshetov/mYcUM_aRTYOM
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 81.97 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 1.59 ms.
+Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
+[Subsystems] Discovering subsystems at path D:/Unity/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity Projects/Sharing/Unity-boy-s-BAND/Reshetov/mYcUM_aRTYOM/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   
+    VRAM:     1977 MB
+    Driver:   26.21.14.3648
+Initialize mono
+Mono path[0] = 'D:/Unity/2020.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002646 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 59.67 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.565 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.011749 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 72.24 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.759 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1862 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.6 MB.
+System memory in use after: 91.5 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2326.
+Total: 2.851800 ms (FindLiveObjects: 0.268200 ms CreateObjectMapping: 0.306900 ms MarkObjects: 2.131900 ms  DeleteObjects: 0.143400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Zagonn.mat
+  artifactKey: Guid(0f633ec9ef38f6b40845a7417418f41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zagonn.mat using Guid(0f633ec9ef38f6b40845a7417418f41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f054dadeb1045725db071e47f9859c') in 1.020462 seconds
+  Import took 1.025621 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009526 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.055 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.9 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2368.
+Total: 2.537700 ms (FindLiveObjects: 0.262000 ms CreateObjectMapping: 0.117100 ms MarkObjects: 1.965300 ms  DeleteObjects: 0.191700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 104.815606 seconds.
+  path: Assets/Assets Plus
+  artifactKey: Guid(bdec0d225da84544790ed6180ca6b287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus using Guid(bdec0d225da84544790ed6180ca6b287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f917f81d2d61204b514e2218223596a2') in 0.004357 seconds
+  Import took 0.008010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.863336 seconds.
+  path: Assets/Basket_set
+  artifactKey: Guid(3bd78a9e7538c30408940b22dd02fc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set using Guid(3bd78a9e7538c30408940b22dd02fc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001aee34c78e20f6a5d17408e0822fcf') in 0.002670 seconds
+  Import took 0.006565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.658612 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(2457f2dfa6800304e93370c6e701033e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(2457f2dfa6800304e93370c6e701033e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd874c4c509f2cff6cfa754b7fece2a3f') in 0.002679 seconds
+  Import took 0.006546 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010700 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.46 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.784 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 1805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2371.
+Total: 2.720300 ms (FindLiveObjects: 0.256700 ms CreateObjectMapping: 0.073000 ms MarkObjects: 2.287100 ms  DeleteObjects: 0.102000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 156.298372 seconds.
+  path: Assets/Assets MOOD WARE
+  artifactKey: Guid(5fa378969efbbc644a9ae73f3f2c60ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets MOOD WARE using Guid(5fa378969efbbc644a9ae73f3f2c60ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c37d43295dc47bcf1e028291d6efffa') in 0.004927 seconds
+  Import took 0.008275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007717 seconds.
+  path: Assets/Assets MOOD WARE
+  artifactKey: Guid(5fa378969efbbc644a9ae73f3f2c60ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets MOOD WARE using Guid(5fa378969efbbc644a9ae73f3f2c60ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c37d43295dc47bcf1e028291d6efffa') in 0.001926 seconds
+  Import took 0.005960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.614800 seconds.
+  path: Assets/Assets MOOD WARE/_MW Skybox
+  artifactKey: Guid(4b4c827a04c5dd24c91fdf88e02e7dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets MOOD WARE/_MW Skybox using Guid(4b4c827a04c5dd24c91fdf88e02e7dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0ead5ac2142100226b504fd475d40c') in 0.002376 seconds
+  Import took 0.005995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.656351 seconds.
+  path: Assets/Assets Plus/33900751.jpg
+  artifactKey: Guid(e49ba41a01c1bce4f8a666a1b009a1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/33900751.jpg using Guid(e49ba41a01c1bce4f8a666a1b009a1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db1f5b4cc0d4562f3bd57fc46c8e593') in 0.148436 seconds
+  Import took 0.152631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Assets Plus/gun.fbx
+  artifactKey: Guid(b9a691fb4099c2b44ae4d1ede32549f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/gun.fbx using Guid(b9a691fb4099c2b44ae4d1ede32549f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a00ec7c01618b71fca2cd4abdc6eeb89') in 0.276225 seconds
+  Import took 0.280231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/Assets Plus/Bullet.prefab
+  artifactKey: Guid(8f20d85b5c1743f438ff24ec7a76efef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/Bullet.prefab using Guid(8f20d85b5c1743f438ff24ec7a76efef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3287ba779d6a22322bdb02ae06e469f6') in 0.017773 seconds
+  Import took 0.021422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Assets Plus/tempo_f_2960_c550_w24__1.jpg
+  artifactKey: Guid(7b16c5c519627254d84312a22832fd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/tempo_f_2960_c550_w24__1.jpg using Guid(7b16c5c519627254d84312a22832fd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece44cf9c8f96d8e54f7e4c487d664d9') in 0.023749 seconds
+  Import took 0.027707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.457215 seconds.
+  path: Assets/Assets Plus/revolver
+  artifactKey: Guid(427a0dbccb410dc4288ec399daba45e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/revolver using Guid(427a0dbccb410dc4288ec399daba45e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a90b215e51a5f183b08c436217ad05f') in 0.002837 seconds
+  Import took 0.006521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002164 seconds.
+  path: Assets/Assets Plus/revolver
+  artifactKey: Guid(427a0dbccb410dc4288ec399daba45e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/revolver using Guid(427a0dbccb410dc4288ec399daba45e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a90b215e51a5f183b08c436217ad05f') in 0.002222 seconds
+  Import took 0.006367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047677 seconds.
+  path: Assets/Assets Plus/revolver/Revolver.fbx
+  artifactKey: Guid(752dc9ba31c2c664092eb733e37073ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/revolver/Revolver.fbx using Guid(752dc9ba31c2c664092eb733e37073ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '850bad8fe1e14fe0ae0358db36392908') in 0.051485 seconds
+  Import took 0.056861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Assets Plus/revolver/Revolver_SPEC.png
+  artifactKey: Guid(476de96bf5ade064294a12ed6d30701b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/revolver/Revolver_SPEC.png using Guid(476de96bf5ade064294a12ed6d30701b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7246d4bf0e92c070641b5a616dc94e75') in 0.011785 seconds
+  Import took 0.016167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Assets Plus/revolver/Revolver.png
+  artifactKey: Guid(0a0690bbe9b1b9346af979b06c91817b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/revolver/Revolver.png using Guid(0a0690bbe9b1b9346af979b06c91817b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9963ebdf5a97be26a2d6d485b38001be') in 0.035363 seconds
+  Import took 0.039897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Assets Plus/revolver/Revolver_NRM.png
+  artifactKey: Guid(227bf702ba9661946a484023de494619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/revolver/Revolver_NRM.png using Guid(227bf702ba9661946a484023de494619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19c8d93294f8c3e0b849e49aa57984a') in 0.009232 seconds
+  Import took 0.012756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Assets Plus/revolver/Revolver.png
+  artifactKey: Guid(0a0690bbe9b1b9346af979b06c91817b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/revolver/Revolver.png using Guid(0a0690bbe9b1b9346af979b06c91817b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9963ebdf5a97be26a2d6d485b38001be') in 0.020631 seconds
+  Import took 0.024876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Assets Plus/revolver/Revolver_NRM.png
+  artifactKey: Guid(227bf702ba9661946a484023de494619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/revolver/Revolver_NRM.png using Guid(227bf702ba9661946a484023de494619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19c8d93294f8c3e0b849e49aa57984a') in 0.020111 seconds
+  Import took 0.023808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.182745 seconds.
+  path: Assets/Basket_set/b skin 6.jpg
+  artifactKey: Guid(0a134f5a22c69ef47b00e51c03d2060d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/b skin 6.jpg using Guid(0a134f5a22c69ef47b00e51c03d2060d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a187332a7df2a20ef2a031141e2ca50f') in 0.009010 seconds
+  Import took 0.014090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Basket_set/basket.fbx
+  artifactKey: Guid(1849fe50cb15203479a597511f897531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/basket.fbx using Guid(1849fe50cb15203479a597511f897531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98cc2c55b2272dfd74cffe829a329290') in 0.064463 seconds
+  Import took 0.068787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/Basket_set/красный.jpg
+  artifactKey: Guid(d739078587411f84c8e27033e87a2ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/красный.jpg using Guid(d739078587411f84c8e27033e87a2ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0e65f82fc5cc83f70ffbd4b2320ad1') in 0.008016 seconds
+  Import took 0.012343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/Basket_set/b skin 8.png
+  artifactKey: Guid(6c40e44b82ec3ae4391536953aa8d355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/b skin 8.png using Guid(6c40e44b82ec3ae4391536953aa8d355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0007d4c19091fddc69e64236c94558c') in 0.019605 seconds
+  Import took 0.023602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Basket_set/граффити.jpg
+  artifactKey: Guid(fb1665de3b28d994faf0ed41cb9d7d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/граффити.jpg using Guid(fb1665de3b28d994faf0ed41cb9d7d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb98f30583cf7b269b710b6b65cc1312') in 0.007795 seconds
+  Import took 0.029087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Basket_set/ball skin.jpg
+  artifactKey: Guid(2d511c1678ae28d4783bc16b9be6843b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/ball skin.jpg using Guid(2d511c1678ae28d4783bc16b9be6843b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61ca9e7674bb8fa105629009071fb111') in 0.009107 seconds
+  Import took 0.013078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Basket_set/черная кожа.png
+  artifactKey: Guid(6caaccb958d0a3d48a035214dc2a7291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/черная кожа.png using Guid(6caaccb958d0a3d48a035214dc2a7291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371488fe8839268399f0c21922bdb7b8') in 0.009156 seconds
+  Import took 0.013103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Basket_set/b skin 12.jpg
+  artifactKey: Guid(0401e5c7e850070498ac3ef6d19335ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/b skin 12.jpg using Guid(0401e5c7e850070498ac3ef6d19335ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709cdb7a4f969b07893d251dfdd8f31c') in 0.008071 seconds
+  Import took 0.012085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Basket_set/белый.jpg
+  artifactKey: Guid(df987c6d8008f3840ad851d0a7954a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/белый.jpg using Guid(df987c6d8008f3840ad851d0a7954a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9347e405838dd0ed8a4296fe2f0efd6') in 0.007612 seconds
+  Import took 0.011955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Basket_set/ball skin 5.jpg
+  artifactKey: Guid(47b71be3bcb59714e84f882f93de1d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/ball skin 5.jpg using Guid(47b71be3bcb59714e84f882f93de1d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b4d58cb6d6e7517a27e3145cbe4329f') in 0.009118 seconds
+  Import took 0.014192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Basket_set/b skin 9.jpg
+  artifactKey: Guid(660c38c31d56c2c42ae7329fe3673aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/b skin 9.jpg using Guid(660c38c31d56c2c42ae7329fe3673aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe164d5e4dbb58a716fbce28ec7d729c') in 0.007393 seconds
+  Import took 0.011096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Basket_set/черное дерево.jpg
+  artifactKey: Guid(8f40288c5b722ca49888e57d4d5286e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/черное дерево.jpg using Guid(8f40288c5b722ca49888e57d4d5286e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3aecc22635e24f7a7ca44d519147bbe') in 0.010064 seconds
+  Import took 0.013772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Basket_set/BasketballColor.jpg
+  artifactKey: Guid(b5be6261e14217342aaef9103b71b06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/BasketballColor.jpg using Guid(b5be6261e14217342aaef9103b71b06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3687333268aa9c282299f2c5cb0b0a5') in 0.005801 seconds
+  Import took 0.009372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Basket_set/b skin 11.jpg
+  artifactKey: Guid(b16f6ff53c5f29645ba18667e4eca803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/b skin 11.jpg using Guid(b16f6ff53c5f29645ba18667e4eca803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82d3e63c68a149e6c79ce479f109501') in 0.007612 seconds
+  Import took 0.011567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Basket_set/черный.jpg
+  artifactKey: Guid(964883dfe0bde3c4ea3961fd84e9446a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/черный.jpg using Guid(964883dfe0bde3c4ea3961fd84e9446a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3abfc5d74f04eac3f8dd1a8b3e4970') in 0.023368 seconds
+  Import took 0.027019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Basket_set/ball skin 4.jpg
+  artifactKey: Guid(5646dee22db04984eaedfcf121a99afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/ball skin 4.jpg using Guid(5646dee22db04984eaedfcf121a99afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee6ed0efa39e6c1f410829a67fa74ba') in 0.015656 seconds
+  Import took 0.019817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Basket_set/баллончик.jpg
+  artifactKey: Guid(4f62c704e3597714e88c1556b0b32b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/баллончик.jpg using Guid(4f62c704e3597714e88c1556b0b32b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b47db79cc04f67c308bc716ca1448cd') in 0.008811 seconds
+  Import took 0.012312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Basket_set/b skin 10.png
+  artifactKey: Guid(4d49ac7b6b05bc642b9bb6e8d923ce05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/b skin 10.png using Guid(4d49ac7b6b05bc642b9bb6e8d923ce05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c3ef886c1c66deba80ce8329a22586') in 0.007463 seconds
+  Import took 0.011017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Basket_set/basket_area_true.fbx
+  artifactKey: Guid(9c8bae115df19ce459d0a601a3e75a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/basket_area_true.fbx using Guid(9c8bae115df19ce459d0a601a3e75a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad487e4ec6f1336860112fed464eb7f') in 0.179138 seconds
+  Import took 0.184448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Basket_set/Basket_Bounce.physicMaterial
+  artifactKey: Guid(0ba17c7ef9f995241b86f92ba444f35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/Basket_Bounce.physicMaterial using Guid(0ba17c7ef9f995241b86f92ba444f35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24819b51fae98b2a993581802fc8245') in 0.004750 seconds
+  Import took 0.008971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Basket_set/половина земли.png
+  artifactKey: Guid(fa321961a97a4df42986ec354adc00f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/половина земли.png using Guid(fa321961a97a4df42986ec354adc00f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b9f3883f439553c8a54a6a29769939') in 0.007963 seconds
+  Import took 0.011431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Basket_set/металлик.jpg
+  artifactKey: Guid(fef91c53269abed40b70c88ade321b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/металлик.jpg using Guid(fef91c53269abed40b70c88ade321b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a891b99cb615f5710d9e669ca9f5100') in 0.006810 seconds
+  Import took 0.010416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Basket_set/B_Area.fbx
+  artifactKey: Guid(c53230e409c1d49448a0305ab223100e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/B_Area.fbx using Guid(c53230e409c1d49448a0305ab223100e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398c8dde1453ae91a7b332c4314ae7a1') in 0.497439 seconds
+  Import took 0.503910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Basket_set/b skin 7.jpg
+  artifactKey: Guid(5a757c9c12b209347bf57f3eaeadfc68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/b skin 7.jpg using Guid(5a757c9c12b209347bf57f3eaeadfc68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d12d37d6f41a019a485bc72e878a2c') in 0.008668 seconds
+  Import took 0.013499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Basket_set/zagon.png
+  artifactKey: Guid(f2897975ce7236b469b0578ae39c409c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Basket_set/zagon.png using Guid(f2897975ce7236b469b0578ae39c409c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e9d4f5a42929b5d0d6ba9fc8328f8a') in 0.007098 seconds
+  Import took 0.010866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.940346 seconds.
+  path: Assets/SteamVR
+  artifactKey: Guid(7b2047d1b3aab1140b322f0e91c29b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR using Guid(7b2047d1b3aab1140b322f0e91c29b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360fff244994ff03a969e233d48f2243') in 0.002100 seconds
+  Import took 0.005788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.473241 seconds.
+  path: Assets/SteamVR_Input
+  artifactKey: Guid(5382b4b3b95e91d4cbe54e0c05ae921c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR_Input using Guid(5382b4b3b95e91d4cbe54e0c05ae921c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ed7a1ce0b1d9cafb4c7ecf6e0de984') in 0.002481 seconds
+  Import took 0.006809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001766 seconds.
+  path: Assets/SteamVR_Input
+  artifactKey: Guid(5382b4b3b95e91d4cbe54e0c05ae921c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR_Input using Guid(5382b4b3b95e91d4cbe54e0c05ae921c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ed7a1ce0b1d9cafb4c7ecf6e0de984') in 0.002625 seconds
+  Import took 0.006790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041661 seconds.
+  path: Assets/SteamVR_Input/SteamVR_Actions.asmdef
+  artifactKey: Guid(6bab7ec7f7f987b4ea15fb98d9f8652d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR_Input/SteamVR_Actions.asmdef using Guid(6bab7ec7f7f987b4ea15fb98d9f8652d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029a86da06796f28d4b7cf45ad805e25') in 0.005357 seconds
+  Import took 0.009534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.677973 seconds.
+  path: Assets/SteamVR_Resources
+  artifactKey: Guid(424634b3836986a449cf422480d7a889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR_Resources using Guid(424634b3836986a449cf422480d7a889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1efeb1befcfe9468b807b3a4816b65') in 0.002577 seconds
+  Import took 0.006600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001869 seconds.
+  path: Assets/SteamVR_Resources
+  artifactKey: Guid(424634b3836986a449cf422480d7a889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR_Resources using Guid(424634b3836986a449cf422480d7a889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1efeb1befcfe9468b807b3a4816b65') in 0.002790 seconds
+  Import took 0.007665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.186463 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7a35b20df66958a2dfa0bec82de609') in 0.002446 seconds
+  Import took 0.006099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001837 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7a35b20df66958a2dfa0bec82de609') in 0.002527 seconds
+  Import took 0.007378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.751240 seconds.
+  path: Assets/XR
+  artifactKey: Guid(944080379f09e7b4ea08ad90c1d34f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR using Guid(944080379f09e7b4ea08ad90c1d34f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9cff1d34769e1c0c762ef4d3649bc2f') in 0.002631 seconds
+  Import took 0.006750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002673 seconds.
+  path: Assets/XR
+  artifactKey: Guid(944080379f09e7b4ea08ad90c1d34f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR using Guid(944080379f09e7b4ea08ad90c1d34f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9cff1d34769e1c0c762ef4d3649bc2f') in 0.002865 seconds
+  Import took 0.007405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.070985 seconds.
+  path: Assets/XR/XRGeneralSettings.asset
+  artifactKey: Guid(bfc72740992e052449fdadde6f773908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/XRGeneralSettings.asset using Guid(bfc72740992e052449fdadde6f773908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2c18c400e79ae5faec7caf73257d37') in 0.018554 seconds
+  Import took 0.024029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.088235 seconds.
+  path: Assets/Assets Plus/Gun.cs
+  artifactKey: Guid(bda9f194b625aef48bea0eda648d6950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/Gun.cs using Guid(bda9f194b625aef48bea0eda648d6950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcab7c890531962f8c758bb316c0a0db') in 0.027899 seconds
+  Import took 0.033553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.262503 seconds.
+  path: Assets/Assets Plus/MakeDamage.cs
+  artifactKey: Guid(24ecade16e080ad49be9959dbd422e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/MakeDamage.cs using Guid(24ecade16e080ad49be9959dbd422e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6dfc2a66920d1a5657679df6ef5758a') in 0.002074 seconds
+  Import took 0.006093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.451208 seconds.
+  path: Assets/Assets Plus/models
+  artifactKey: Guid(a3ebfc2738d16ac49aab852313d33cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/models using Guid(a3ebfc2738d16ac49aab852313d33cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dede834ef1da8f0279903f841ee5f439') in 0.002662 seconds
+  Import took 0.007322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.567368 seconds.
+  path: Assets/Assets Plus/materials
+  artifactKey: Guid(41b16f4c7cadec94ca7ff89e0ade33c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/materials using Guid(41b16f4c7cadec94ca7ff89e0ade33c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff53662d758545abd6c9be1bae121c2') in 0.002478 seconds
+  Import took 0.007288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.406322 seconds.
+  path: Assets/Assets Plus/scripts
+  artifactKey: Guid(a773d622712223e45b17046561247272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Plus/scripts using Guid(a773d622712223e45b17046561247272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd95c8b9e31200a6a379537d952b5a1ec') in 0.004340 seconds
+  Import took 0.009668 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008659 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.246 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 1805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.7 MB.
+System memory in use after: 89.8 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2382.
+Total: 2.761300 ms (FindLiveObjects: 0.239600 ms CreateObjectMapping: 0.122100 ms MarkObjects: 2.297000 ms  DeleteObjects: 0.101300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009975 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Unity Projects\Sharing\Unity-boy-s-BAND\Reshetov\mYcUM_aRTYOM\Library\PackageCache\com.unity.xr.oculus@1.7.0\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.7.0/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.342 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.99 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 1805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.7 MB.
+System memory in use after: 89.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2385.
+Total: 4.107200 ms (FindLiveObjects: 0.412600 ms CreateObjectMapping: 0.552900 ms MarkObjects: 3.071800 ms  DeleteObjects: 0.067700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
