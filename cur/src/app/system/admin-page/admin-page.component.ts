@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {AddUserModel} from '../shared/models/adduser.model';
 import {User} from '../shared/models/user.model';
 import {FormControl, FormGroup} from '@angular/forms';
@@ -16,9 +16,10 @@ export class AdminPageComponent implements OnInit {
   form: FormGroup;
   user = this.studyingService.getUser();
   constructor(private addService: AddService, private studyingService: StudyingService, private  usersService: UsersService) { }
-
+  // @Input() userr: User;
   ngOnInit() {
     this.form = new FormGroup({
+      id: new FormControl(),
       name: new FormControl(),
       login: new FormControl(),
       password: new FormControl(),
@@ -28,10 +29,34 @@ export class AdminPageComponent implements OnInit {
   }
   deleteThisUser(deleteUser: User): void {
     this.usersService.deleteUserById(deleteUser).subscribe(() => {
-      alert('Пользователь успешно удален');
+      alert('Пользователь удален!');
     });
   }
 
+  edit() {
+    document.getElementById('edit_id').style.display = 'block';
+    document.getElementById('add_id').style.display = 'none';
+  }
+  //
+  add() {
+    document.getElementById('edit_id').style.display = 'none';
+    document.getElementById('add_id').style.display = 'block';
+  }
+  //
+  update(): void {
+    const formData = this.form.value;
+    //
+    const id = Number(formData.id);
+    const name = String(formData.name);
+    const login = String(formData.login);
+    const password = String(formData.password);
+    const type = String(formData.type);
+    const group = String(formData.group);
+    const user = new User(name, login, password, type, group, id);
+    this.usersService.updateUser(user).subscribe();
+    alert('Изменения сохранены!');
+  }
+  //
   onSubmit1() {
     const formData = this.form.value;
     const name = String(formData.name);
@@ -42,7 +67,7 @@ export class AdminPageComponent implements OnInit {
     const user = new User(name, login, password, type, group);
     this.addService.User(user)
       .subscribe(() => {
-        alert('Добавлено!');
+        alert('Пользователь добавлен!');
       });
   }
 }

@@ -1,15 +1,9 @@
-
-
 <div class="sidebar">
-
   <p>Список пользователей</p>
-  <a class="dropdown-item">
-    <span> <i class="fa fa-power-off icon"></i> + </span>
-  </a> <b>Новый пользователь</b>
-
+  <button type="new" (click)="add()">+ Новый пользователь</button>
+  <button type="edit" (click)="edit()">Редактировать</button>
   <div *ngFor="let User of user | async">
     <table>
-      <button type="edit">Редактировать</button>
       <button class="delete" (click)="deleteThisUser(User)">Удалить</button>
       <tr class="id">ID Пользователя: {{User.id}}</tr>
       <tr class="name">ФИО: {{User.name}}</tr>
@@ -19,13 +13,11 @@
       <tr>_________________________________________________</tr>
     </table>
   </div>
-
 </div>
 
-<div class ="main">
+<div class ="main" id="add_id">
   <div class="menu2">
   <p> Добавить: пользователя </p>
-  <p> ID пользователя: ??? </p>
   <form [formGroup]= "form" (ngSubmit)="onSubmit1()">
     <label>
       <input type = "text" formControlName="name" placeholder="ФИО" class="name">
@@ -42,12 +34,13 @@
   </form>
 </div>
 </div>
-<div class ="editpage">
+
+<div class ="editpage" id="edit_id">
   <div class="editpage2">
   <p> Редактировать: пользователя </p>
-  <p> ID пользователя: 1 </p>
-  <form [formGroup]= "form" (ngSubmit)="onSubmit1()">
+  <form [formGroup]= "form">
     <label>
+      <input type = "text" formControlName="id" placeholder="ID" class="id">
       <input type = "text" formControlName="name" placeholder="ФИО" class="name">
       <input type = "text" formControlName="login" placeholder="Логин" class="login">
       <input type = "text" formControlName="password" placeholder="Пароль" class="password">
@@ -57,7 +50,7 @@
       </select>
       <input type = "text" formControlName="group" placeholder="Группа" class="group">
     </label>
-    <button class="writerout" type="submit">Сохранить</button>
+    <button class="writerout" type="submit" (click)="update()">Сохранить</button>
     <br>
   </form>
   </div>

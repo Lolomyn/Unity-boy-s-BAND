@@ -19,16 +19,9 @@
 
   border: 2px solid #0072BC;
   box-sizing: border-box;
-}
-.menu2
-{
   display: none;
 }
-.main:focus ~ .menu2,
-.menu2:hover
-{
-  display: block;
-}
+
 .editpage {
   position: absolute;
   width: 827px;
@@ -38,4 +31,5 @@
 
   border: 2px solid #0072BC;
   box-sizing: border-box;
+  display: none;
 }

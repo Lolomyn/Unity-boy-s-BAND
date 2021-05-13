@@ -31,4 +31,11 @@ export class UsersService {
     const url = `${this.baseUrl}/${id}`;
     return this.http.delete<User>(url).pipe();
   }
+  //
+  updateUser(upd: User): Observable<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({'Content-Type': 'application/json'})
+    };
+    return this.http.put(`${'http://localhost:3000/users'}/${upd.id}`, upd, httpOptions).pipe();
+  }
 }
