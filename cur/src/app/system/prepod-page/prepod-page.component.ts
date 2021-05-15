@@ -3,15 +3,6 @@ import {User} from '../shared/models/user.model';
 import {StudyingService} from '../shared/services/studying.service';
 import {Studying} from '../shared/models/studying';
 
-interface Food {
-  value: string;
-  viewValue: string;
-}
-
-interface Car {
-  value: string;
-  viewValue: string;
-}
 @Component({
   selector: 'app-prepod-page',
   templateUrl: './prepod-page.component.html',
@@ -19,8 +10,10 @@ interface Car {
 })
 export class PrepodPageComponent implements OnInit {
   selectedCourse: string;
+  // selectedThemes: string;
   user: User = JSON.parse(this.getUser());
   studying = this.studyingService.getStudying();
+  // studying2 = this.studyingService.getThemes();
   constructor(private studyingService: StudyingService) {
   }
 
