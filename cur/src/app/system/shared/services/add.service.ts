@@ -6,17 +6,19 @@ import {User} from '../models/user.model';
 import {AddUserModel} from '../models/adduser.model';
 import {Studying} from '../models/studying';
 import {HttpClient} from '@angular/common/http';
+import {StudyingService} from './studying.service';
 
 
 @Injectable()
 export class AddService extends BaseApi {
 // private UserData = 'http://localhost:3000/users';
 
-constructor(http: Http) {
-   super(http);
-   }
-
+constructor(http: Http) { super(http); }
   User(user: User): Observable<User> {
-   // return this.post('users', user); }
-    return this.http.post('http://localhost:3000/users', user).map((response: Response) => response.json()); }
+    return this.http.post('http://localhost:3000/users', user).map((response: Response) => response.json());
+  }
+  Study(study: Studying): Observable<Studying> {
+    return this.http.post('http://localhost:3000/study', study).map((response: Response) => response.json());
+  }
+
 }

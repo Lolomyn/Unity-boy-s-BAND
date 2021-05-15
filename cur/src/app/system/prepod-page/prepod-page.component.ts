@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {User} from '../shared/models/user.model';
+import {StudyingService} from '../shared/services/studying.service';
+import {Studying} from '../shared/models/studying';
 
 @Component({
   selector: 'app-prepod-page',
@@ -8,8 +10,9 @@ import {User} from '../shared/models/user.model';
 })
 export class PrepodPageComponent implements OnInit {
   user: User = JSON.parse(this.getUser());
+  studying = this.studyingService.getStudying();
 
-  constructor() {
+  constructor(private studyingService: StudyingService) {
   }
 
   ngOnInit() {
