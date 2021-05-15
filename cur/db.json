@@ -2,7 +2,7 @@
   "users": [
     {
       "login": "god",
-      "password": "12345678",
+      "password": "greatest_pass",
       "name": "Администратор",
       "type": "Администратор",
       "group": "none",
@@ -11,7 +11,7 @@
     {
       "name": "Егоров Юрий Сергеевич",
       "login": "Egorov",
-      "password": "12345678",
+      "password": "i_love_design",
       "type": "Преподаватель",
       "group": "none",
       "id": 2
@@ -34,10 +34,18 @@
     },
     {
       "name": "Максимова Екатерина Игоревна",
-      "login": "neVON",
+      "login": "VON",
       "password": "12345678",
       "type": "Студент",
-      "group": "18-СБК",
+      "group": "18-ИТД",
+      "id": 5
+    },
+    {
+      "name": "Григорян Артур Арманович",
+      "login": "art_grig",
+      "password": "give_me_power",
+      "type": "Студент",
+      "group": "18-ИТД",
       "id": 5
     }
   ],
