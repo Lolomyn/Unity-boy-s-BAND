@@ -1,14 +1,13 @@
 <div class="sidebar">
   <b> Выбранный курс: </b>
   <div>
-    <select>
-      <option value="" *ngFor="let Study of studying | async"> {{Study.course}} </option>
+    <select [(ngModel)]="selectedCourse" name="course">
+      <option *ngFor="let Study of studying | async" [value]="Study.prepod"> {{Study.course}} </option>
     </select>
-    <b> Выбранный курс: </b>
-    <p>  </p>
+    <b> Преподаватель: </b>
+    <p>{{selectedCourse}} </p>
   </div>
-</div>
-
-<div class ="main">
-
+  <div>
+    <h4>добавить тему</h4>
+  </div>
 </div>

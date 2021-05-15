@@ -32,6 +32,9 @@ export class StudyingService {
   getStudying(): Observable<Studying[]> {
     return this.http.get<Studying[]>(`http://localhost:3000/studying`);
   }
+  getcourse(): Observable<Studying[]> {
+    return this.http.get<Studying[]>(`http://localhost:3000/studying/course`);
+  }
   getUser(): Observable<User[]> {
     return this.http.get<User[]>(`http://localhost:3000/users`);
   }
