@@ -8,6 +8,7 @@ import {Studying} from '../shared/models/studying';
   templateUrl: './prepod-page.component.html',
   styleUrls: ['./prepod-page.component.scss']
 })
+
 export class PrepodPageComponent implements OnInit {
   selectedCourse: string;
   // selectedThemes: string;
