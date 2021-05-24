@@ -1,6 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {User} from '../shared/models/user.model';
 import {StudyingService} from '../shared/services/studying.service';
+import {FormControl, FormGroup} from '@angular/forms';
+import {AddService} from '../shared/services/add.service';
+import {Studying} from '../shared/models/studying';
+import {ThemesModel} from '../shared/models/themes.model';
 
 @Component({
   selector: 'app-prepod-page',
@@ -9,22 +13,27 @@ import {StudyingService} from '../shared/services/studying.service';
 })
 
 export class PrepodPageComponent implements OnInit {
+  form: FormGroup;
   selectedCourse: string;
   // selectedThemes: string;
-  themes = this.studyingService.getThemes();
+  // themes = this.studyingService.getThemes();
   user: User = JSON.parse(this.getUser());
   studying = [];
   selectedThemes = [];
   selectedSections = [];
 
   // studying2 = this.studyingService.getThemes();
-  constructor(private studyingService: StudyingService) {
+  constructor(private studyingService: StudyingService, private addService: AddService) {
   }
 
   ngOnInit() {
     this.studyingService.getStudying().subscribe((targetStudying) => {
       this.studying = targetStudying;
       console.log(targetStudying);
+    });
+    this.form = new FormGroup({
+      name: new FormControl(),
+      id: new FormControl()
     });
   }
 
@@ -40,5 +49,20 @@ export class PrepodPageComponent implements OnInit {
   changeValue2(value): any {
     this.selectedSections = this.studying.find((course) => course.prepod === value).themes.section;
     console.log(this.selectedSections);
+  }
+
+  add() {
+    // document.getElementById('edit_id').style.display = 'none';
+    document.getElementById('add_id').style.display = 'block';
+  }
+  onSubmit1() {
+    const formData = this.form.value;
+    const name = String(formData.name);
+    const id = Number(formData.id);
+    const theme = new ThemesModel(name, id);
+    this.addService.Theme(theme)
+      .subscribe(() => {
+        alert('Тема добавлена!');
+      });
   }
 }

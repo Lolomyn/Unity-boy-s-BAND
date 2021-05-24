@@ -17,7 +17,7 @@ export class StudyingService {
     return this.http.get<Studying[]>(`http://localhost:3000/study`);
   }
   getThemes(): Observable<ThemesModel[]> {
-    return this.http.get<ThemesModel[]>(`http://localhost:3000/study/themes`);
+    return this.http.get<ThemesModel[]>(`http://localhost:3000/study`);
   }
   getUser(): Observable<User[]> {
     return this.http.get<User[]>(`http://localhost:3000/users`);

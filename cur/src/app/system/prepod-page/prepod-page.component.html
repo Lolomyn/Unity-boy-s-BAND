@@ -9,17 +9,33 @@
     <p>{{selectedCourse}} </p>
   <b>Название темы:</b>
     <div *ngFor="let Study of selectedThemes">{{Study.name}}
-      <p><b>Раздел:</b></p>
-      <div *ngFor="let Study of selectedSections">{{Study.name}}</div>
+<!--      <p><b>Раздел:</b></p>-->
+<!--      <div *ngFor="let Study of selectedSections">-->
+<!--        {{Study.name}}-->
+<!--      </div>-->
     </div>
-
+  <br><button type="new" (click)="add()"> + Новая тема </button>
 </div>
 
 <div class="main">
   <form>
     <input type="reset" value="Очистить">
-    <textarea class="main_text">    </textarea>
+    <textarea class="main_text"></textarea>
     <input type="button" value="Сохранить">
     <input type="file">
   </form>
+</div>
+
+<div class ="add" id="add_id">
+  <div class="menu2">
+    <p> Добавить: тему </p>
+    <form [formGroup]= "form" (ngSubmit)="onSubmit1()">
+      <label>
+        <input type = "text" formControlName="courseId" placeholder="ID курса" class="id">
+        <input type = "text" formControlName="name" placeholder="Название темы" class="name">
+      </label>
+      <button class="writerout" type="submit"> Добавить </button>
+      <br>
+    </form>
+  </div>
 </div>

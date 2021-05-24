@@ -1,7 +1,7 @@
 <div class="sidebar">
   <p>Список пользователей</p>
-  <button type="new" (click)="add()">+ Новый пользователь</button>
-  <button type="edit" (click)="edit()">Редактировать</button>
+  <button type="new" (click)="add()"> + Новый пользователь </button>
+  <button type="edit" (click)="edit()"> Редактировать </button>
   <div *ngFor="let User of user | async">
     <table>
       <button class="delete" (click)="deleteThisUser(User)">Удалить</button>
@@ -29,7 +29,7 @@
       </select>
       <input type = "text" formControlName="group" placeholder="Группа" class="group">
     </label>
-    <button class="writerout" type="submit">Добавить </button>
+    <button class="writerout" type="submit"> Добавить </button>
     <br>
   </form>
 </div>

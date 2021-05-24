@@ -7,6 +7,7 @@ import {AddUserModel} from '../models/adduser.model';
 import {Studying} from '../models/studying';
 import {HttpClient} from '@angular/common/http';
 import {StudyingService} from './studying.service';
+import {ThemesModel} from '../models/themes.model';
 
 
 @Injectable()
@@ -19,6 +20,9 @@ constructor(http: Http) { super(http); }
   }
   Study(study: Studying): Observable<Studying> {
     return this.http.post('http://localhost:3000/study', study).map((response: Response) => response.json());
+  }
+  Theme(theme: ThemesModel | Studying): Observable<ThemesModel | Studying> {
+    return this.http.post('http://localhost:3000/study', theme).map((response: Response) => response.json());
   }
 
 }

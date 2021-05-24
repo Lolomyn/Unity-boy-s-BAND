@@ -19,7 +19,7 @@
 
   border: 2px solid #0072BC;
   box-sizing: border-box;
-  display: block;
+  display: none;
 }
 
 .main_text {
@@ -37,4 +37,16 @@
 }
 img{
   cursor:pointer;
+}
+
+.add {
+  position: absolute;
+  width: 827px;
+  height: 754px;
+  left: 757px;
+  top: 125px;
+
+  border: 2px solid #0072BC;
+  box-sizing: border-box;
+  display: none;
 }

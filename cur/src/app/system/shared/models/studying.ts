@@ -1,5 +1,4 @@
 import {ThemesModel} from './themes.model';
-
 export class Studying {
   constructor(
     public course: string,
