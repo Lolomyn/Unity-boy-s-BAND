@@ -20,9 +20,8 @@ constructor(http: Http) { super(http); }
   }
   Study(study: Studying): Observable<Studying> {
     return this.http.post('http://localhost:3000/study', study).map((response: Response) => response.json());
+      }
+  Theme(themes: ThemesModel): Observable<ThemesModel> {
+    return this.http.post('http://localhost:3000/study', themes).map((response: Response) => response.json());
   }
-  Theme(theme: ThemesModel | Studying): Observable<ThemesModel | Studying> {
-    return this.http.post('http://localhost:3000/study', theme).map((response: Response) => response.json());
-  }
-
 }

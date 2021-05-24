@@ -21,6 +21,7 @@ export class PrepodPageComponent implements OnInit {
   studying = [];
   selectedThemes = [];
   selectedSections = [];
+  // study: Studying = JSON.parse(this.getStudies());
 
   // studying2 = this.studyingService.getThemes();
   constructor(private studyingService: StudyingService, private addService: AddService) {
@@ -40,7 +41,9 @@ export class PrepodPageComponent implements OnInit {
   getUser(): any {
     return localStorage.getItem('user');
   }
-
+  // getStudies(): any {
+  //   return localStorage.getItem('study');
+  // }
   changeValue(value): any {
     this.selectedThemes = this.studying.find((course) => course.prepod === value).themes;
     this.selectedSections = this.studying.find((course) => course.prepod === value).themes.section;
@@ -57,10 +60,11 @@ export class PrepodPageComponent implements OnInit {
   }
   onSubmit1() {
     const formData = this.form.value;
+    // const themes = String(formData.themes.name)
     const name = String(formData.name);
     const id = Number(formData.id);
-    const theme = new ThemesModel(name, id);
-    this.addService.Theme(theme)
+    const themes = new ThemesModel(name, id);
+    this.addService.Theme(themes)
       .subscribe(() => {
         alert('Тема добавлена!');
       });
