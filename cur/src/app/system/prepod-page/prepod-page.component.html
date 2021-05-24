@@ -2,19 +2,19 @@
 <div class="sidebar">
 
   <b> Выбранный курс: </b>
-    <select [(ngModel)]="selectedCourse" name="course" (ngModelChange)="changeValue($event)">
-      <option *ngFor="let Study of studying" [value]="Study.prepod"> {{Study.course}} </option>
-    </select>
-    <b> Преподаватель: </b>
-    <p>{{selectedCourse}} </p>
+  <select [(ngModel)]="selectedCourse" name="course" (ngModelChange)="changeValue($event)">
+    <option *ngFor="let Study of studying" [value]="Study.prepod"> {{Study.course}} </option>
+  </select>
+  <b> Преподаватель: </b>
+  <p>{{selectedCourse}} </p>
   <b>Название темы:</b>
-    <div *ngFor="let Study of selectedThemes">{{Study.name}}
-<!--      <p><b>Раздел:</b></p>-->
-<!--      <div *ngFor="let Study of selectedSections">-->
-<!--        {{Study.name}}-->
-<!--      </div>-->
-    </div>
-  <br><button type="new" (click)="add()"> + Новая тема </button>
+  <div *ngFor="let Study of selectedThemes">{{Study.name}}
+    <!--      <p><b>Раздел:</b></p>-->
+    <!--      <div *ngFor="let Study of selectedSections">-->
+    <!--        {{Study.name}}-->
+    <!--      </div>-->
+  </div>
+  <br><button (click)="add()"> + Новая тема </button>
 </div>
 
 <div class="main">
@@ -39,3 +39,7 @@
     </form>
   </div>
 </div>
+
+<!--<div *ngFor="let d of data | async">-->
+<!--  <p>{{d.themes[1].name}} </p>-->
+<!--</div>-->
