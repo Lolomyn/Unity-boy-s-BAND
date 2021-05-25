@@ -40,23 +40,7 @@
 //  margin-right:5px; /*Добавляем отступ у пунктов меню*/
 //
 //}
-//.dropdown-item {
-//margin-right: 1rem;
-//  &:active{
-//    background: #515151;
-//  }
-//  padding: 0.5rem 1.5rem;
-//  &:last-child{
-//    margin: 0;
-//  }
-//}
-//.dropdown-menu {
-//  margin: 0 1rem;
-//  display: flex;
-//  position: relative;
-//  align-items: center;
-//  justify-content: center;
-//}
+
 header {
   margin: 0;
   padding: 0;
@@ -82,13 +66,13 @@ header {
   position: absolute;
   width: 500px;
   height: 18px;
-  left: 320px;
-  top: 164px;
+  left: 70px;
+  top: 18px;
 
-  font-family: Inter;
+  // font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 14px;
   line-height: 150%;
 
   color: #181818;
@@ -128,8 +112,23 @@ header {
   font-size: 16px;
   line-height: 130%;
   /* identical to box height, or 21px */
-
   color: #181818;
+}
+
+.name_user {
+  font-size: 14px;
+}
+
+.exit_logo{
+  /* Vector */
+
+  position: absolute;
+  left: 98.56%;
+  right: 17.6%;
+  top: 4.43%;
+  bottom: 93.51%;
+
+  background: #000000;
 
 
 }

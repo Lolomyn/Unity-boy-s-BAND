@@ -18,25 +18,28 @@
 <header class="header">
 
   <div class="header_logo">
-    <a href="index.html" class="header_logo_link">
+    <a class="header_logo_link">
       <img src="../../../../assets/images/image%201.svg" alt="Логотип НГТУ им Р.Е.Алексеева" class="header_logo_link">
     </a>
+    <div class="header_text">
+      <p>НГТУ им. Р.Е. Алексеева </p>
+    </div>
   </div>
 
-  <div class="header_text">
-    <p>НГТУ им. Р.Е. Алексеева </p>
-  </div>
   <div class="header_text2">
-    <p> Всего курсов: 52 </p>
+    <p> Всего курсов: 2 </p>
   </div>
   <div class="header_left">
     <div class="header_text3">
-            <a class="dropdown-item" routerLinkActive="active" [routerLink]="['profile']"><i class="fa fa-building-o"></i>
-              {{user.name}} ({{user.type}})</a>
+            <a class="name_user" routerLinkActive="active"><i class="fa fa-building-o"></i>
+              {{user.name}} ({{user.type}}) </a>
+<!--      <a class (click)="onLogout()">-->
+<!--        <img src="../../../../assets/images/svg/Vector.svg" alt="Выход" class="header_exit"></a>-->
     </div>
     <div class="exit_logo">
-      <a class="header_exit" (click)="onLogout()">
-        <img src="../../../../assets/images/svg/Vector.svg" alt="Выход" class="header_exit"></a>
+      <a (click)="onLogout()">
+        <img src="../../../../assets/images/svg/Vector.svg" alt="Выход" class="header_exit">
+      </a>
     </div>
   </div>
 </header>

@@ -1,15 +1,21 @@
 <div class="sidebar">
   <p>Список пользователей</p>
-  <button type="new" (click)="add()"> + Новый пользователь </button>
-  <button type="edit" (click)="edit()"> Редактировать </button>
+  <a (click)="add()">
+    <img src="../../../assets/images/Vector_add.svg" alt="Добавить" class="add">
+  </a>
+  <a (click)="edit()">
+    <img src="../../../assets/images/Vector_edit.svg" alt="Редактировать" class="edit">
+  </a>
   <div *ngFor="let User of user | async">
     <table>
-      <button class="delete" (click)="deleteThisUser(User)">Удалить</button>
-      <tr class="id">ID Пользователя: {{User.id}}</tr>
-      <tr class="name">ФИО: {{User.name}}</tr>
-      <tr class="login">Логин: {{User.login}}</tr>
-      <tr class="password">Пароль: {{User.password}}</tr>
-      <tr class="type">Роль: {{User.type}}</tr>
+      <a (click)="deleteThisUser(User)">
+        <img src="../../../assets/images/Vector_delete.svg" alt="Удалить" class="delete">
+      </a>
+      <tr class="id"> <b>ID Пользователя: </b> {{User.id}}</tr>
+      <tr class="name"> <b> ФИО: </b> {{User.name}}</tr>
+      <tr class="login"> <b> Логин: </b> {{User.login}}</tr>
+      <tr class="password"> <b>Пароль:</b> {{User.password}}</tr>
+      <tr class="type"><b>Роль: </b> {{User.type}}</tr>
       <tr>_________________________________________________</tr>
     </table>
   </div>
