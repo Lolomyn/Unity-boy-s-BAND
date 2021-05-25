@@ -32,28 +32,104 @@
   -o-transition: all 0.3s 0.01s ease;
   -webkit-transition: all 0.3s 0.01s ease;
 }
-.header-block a:hover {
-  background:#1C85BB;/*добавляем эффект при наведении*/
+//.header-block a:hover {
+//  background:#1C85BB;/*добавляем эффект при наведении*/
+//}
+//.header-block li {
+//  float:left; /*Размещаем список горизонтально для реализации меню*/
+//  margin-right:5px; /*Добавляем отступ у пунктов меню*/
+//
+//}
+//.dropdown-item {
+//margin-right: 1rem;
+//  &:active{
+//    background: #515151;
+//  }
+//  padding: 0.5rem 1.5rem;
+//  &:last-child{
+//    margin: 0;
+//  }
+//}
+//.dropdown-menu {
+//  margin: 0 1rem;
+//  display: flex;
+//  position: relative;
+//  align-items: center;
+//  justify-content: center;
+//}
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
 }
-.header-block li {
-  float:left; /*Размещаем список горизонтально для реализации меню*/
-  margin-right:5px; /*Добавляем отступ у пунктов меню*/
+.header_logo{
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 320px;
+  top: 25px;
+
+  //background: url(/src/img/iag);
 
 }
-.dropdown-item {
-margin-right: 1rem;
-  &:active{
-    background: #515151;
-  }
-  padding: 0.5rem 1.5rem;
-  &:last-child{
-    margin: 0;
-  }
+.header_text{
+  /* НГТУ им. Р.Е. Алексеева */
+
+  position: absolute;
+  width: 500px;
+  height: 18px;
+  left: 320px;
+  top: 164px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 150%;
+
+  color: #181818;
+
 }
-.dropdown-menu {
-  margin: 0 1rem;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
+.header_text2{
+  /* Всего курсов: 3 */
+
+  position: absolute;
+  width: 300px;
+  height: 21px;
+  left: 320px;
+  top: 94px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+
+  color: #181818;
+}
+
+.header_left{
+  /* Савченков Никита Васильевич (студент) */
+
+  position: absolute;
+  width: 321px;
+  height: 21px;
+  left: 1244px;
+  top: 43px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+
+  color: #181818;
+
+
 }

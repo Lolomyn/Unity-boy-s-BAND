@@ -1,17 +1,42 @@
-<div class="headerback">
-</div>
-<div class="header-block">
-  <div class="ngtu"> [PIC] НГТУ им. Р.Е. Алексеева </div>
-    <div class="dropdown-menu">
-      <a class="nav-link dropdown-item" role="button">
-        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['profile']"><i class="fa fa-building-o"></i>
-          {{user.name}} ({{user.type}})</a>
-      </a>
-      <a class="dropdown-item" (click)="onLogout()">
-       <span>
-         <i class="fa fa-power-off icon"></i>
-          X
-       </span>
-      </a>
+<!--<div class="headerback">-->
+<!--</div>-->
+<!--<div class="header-block">-->
+<!--  <div class="ngtu"><img src="../../../../assets/images/image%201.svg"/> НГТУ им. Р.Е. Алексеева </div>-->
+<!--  <div class="dropdown-menu">-->
+<!--    <a class="nav-link dropdown-item" role="button">-->
+<!--      <a class="dropdown-item" routerLinkActive="active" [routerLink]="['profile']"><i class="fa fa-building-o"></i>-->
+<!--        {{user.name}} ({{user.type}})</a>-->
+<!--    </a>-->
+<!--    <a class="dropdown-item" (click)="onLogout()">-->
+<!--       <span>-->
+<!--         <i class="fa fa-power-off icon"></i>-->
+<!--          X-->
+<!--       </span>-->
+<!--    </a>-->
+<!--  </div>-->
+<!--</div>-->
+<header class="header">
+
+  <div class="header_logo">
+    <a href="index.html" class="header_logo_link">
+      <img src="../../../../assets/images/image%201.svg" alt="Логотип НГТУ им Р.Е.Алексеева" class="header_logo_link">
+    </a>
+  </div>
+
+  <div class="header_text">
+    <p>НГТУ им. Р.Е. Алексеева </p>
+  </div>
+  <div class="header_text2">
+    <p> Всего курсов: 52 </p>
+  </div>
+  <div class="header_left">
+    <div class="header_text3">
+            <a class="dropdown-item" routerLinkActive="active" [routerLink]="['profile']"><i class="fa fa-building-o"></i>
+              {{user.name}} ({{user.type}})</a>
     </div>
-</div>
+    <div class="exit_logo">
+      <a class="header_exit" (click)="onLogout()">
+        <img src="../../../../assets/images/svg/Vector.svg" alt="Выход" class="header_exit"></a>
+    </div>
+  </div>
+</header>

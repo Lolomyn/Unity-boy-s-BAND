@@ -4,6 +4,17 @@
   font-family: 'Montserrat',SansSerif;
 }
 
-body{
-  background-color: #99c8f2;
+html{
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  //overflow-y: hidden;
+}
+
+body
+{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
