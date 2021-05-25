@@ -10,7 +10,7 @@
     },
     {
       "name": "Егоров Юрий Сергеевич",
-      "login": "Egorov",
+      "login": "Yegorov",
       "password": "designluv",
       "type": "Преподаватель",
       "group": "none",
@@ -67,6 +67,10 @@
           "id": 3
         }
       ]
+    },
+    {
+      "name": "ДИМА",
+      "id": 4
     }
   ]
 }
