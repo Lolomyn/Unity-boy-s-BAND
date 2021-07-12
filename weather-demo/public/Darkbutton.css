@@ -1,0 +1,193 @@
+
+
+body{
+    background: #f4f4f4;
+}
+
+body.dark{ 
+    background: #373737;
+    color: #f4f4f4;;
+}
+
+
+  :root {
+    /** sunny side **/
+    --blue-background: #C2E9F6;
+    --blue-border: #72cce3;
+    --blue-color: #96dcee;
+    --yellow-background: #fffaa8;
+    --yellow-border: #f5eb71;
+    /** dark side **/
+    --indigo-background: #808fc7;
+    --indigo-border: #5d6baa;
+    --indigo-color: #6b7abb;
+    --gray-border: #e8e8ea;
+    --gray-dots: #e8e8ea;
+    /** general **/
+    --white: #fff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: grid;
+    place-items: top;
+    min-height: 10vh;
+    position: relative;
+  }
+  
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--blue-background);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 250ms ease-in;
+  }
+  
+  .toggleBtn--checkbox {
+    display: none;
+  }
+ 
+  .toggleBtn--checkbox:checked ~ .background {
+    background: var(--indigo-background);
+  }
+  .toggleBtn--checkbox:checked + .toggleBtn--label {
+    background: var(--indigo-color);
+    border-color: var(--indigo-border);
+    /** Change the cloud to stars **/
+    /** Change the sun into the moon **/
+    /** Show the dimples on the moon **/
+  }
+  .toggleBtn--checkbox:checked + .toggleBtn--label .toggleBtn--label-background {
+    left: 60px;
+    width: 5px;
+  }
+  .toggleBtn--checkbox:checked + .toggleBtn--label .toggleBtn--label-background:before {
+    width: 5px;
+    height: 5px;
+    top: -25px;
+  }
+  .toggleBtn--checkbox:checked + .toggleBtn--label .toggleBtn--label-background:after {
+    width: 5px;
+    height: 5px;
+    left: -30px;
+    top: 20px;
+  }
+  .toggleBtn--checkbox:checked + .toggleBtn--label:before {
+    background: var(--white);
+    border-color: var(--gray-border);
+    animation-name: switch;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+  }
+  .toggleBtn--checkbox:checked + .toggleBtn--label:after {
+    transition-delay: 350ms;
+    opacity: 1;
+  }
+  .toggleBtn--label {
+    /** Placeholder element, starting at blue **/
+    width: 78px;
+    height: 34px;
+    background: var(--blue-color);
+    border-radius: 50px;
+    border: 5px solid var(--blue-border);
+    display: flex;
+    position: relative;
+    transition: all 350ms ease-in;
+    left: 76%;
+    top: 20px;
+  }
+  .toggleBtn--label-background {
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    background: var(--white);
+    left: 135px;
+    top: 45px;
+    transition: all 150ms ease-in;
+  }
+  .toggleBtn--label-background:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -20px;
+    transition: all 150ms ease-in;
+  }
+  .toggleBtn--label-background:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -10px;
+    transition: all 150ms ease-in;
+  }
+  .toggleBtn--label:before {
+    animation-name: reverse;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    transition: all 350ms ease-in;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border: 3px solid var(--yellow-border);
+    top: 1px;
+    left: 2px;
+    position: absolute;
+    border-radius: 41px;
+    background: var(--yellow-background);
+  }
+  /* .toggleBtn--label:after {
+    transition-delay: 0ms;
+    transition: all 250ms ease-in;
+    position: absolute;
+    content: "";
+    box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+    left: 50px;
+    top: 23px;
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    opacity: 0;
+  } */
+  
+  @keyframes switch {
+    0% {
+      left: 4px;
+    }
+    60% {
+      left: 20px;
+      width: 56px;
+    }
+    100% {
+      left: 40px;
+      width: 30px;
+    }
+  }
+  @keyframes reverse {
+    0% {
+      left: 40px;
+      width: 30px;
+    }
+    60% {
+      left: 20px;
+      width: 56px;
+    }
+    100% {
+      left: 4px;
+    }
+  }

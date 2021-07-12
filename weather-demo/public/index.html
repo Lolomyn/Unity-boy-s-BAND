@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="Darkbutton.css">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="header">
+        <h2 class="logo">weather widget</h2>
+        <div class="weather-search">
+          <input type="text" list="match-list" id="search" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+          <datalist id="match-list">
+            <option id="citiess"></option>
+           </div>
+        <div class="lang">РУ</div>
+    <div>
+     <input type="checkbox" id="toggleBtn" class="toggleBtn--checkbox">
+     <label for="toggleBtn" class="toggleBtn--label">
+      <span class="toggleBtn--label-background"></span>
+   </div>
+</label>
+</div> 
+<main>
+    <div class="container">
+    <div class="item item-1"> 
+        <section class="location">
+            <div class="city">Northampton, GB</div>
+            <div class="date">Thursday 10 January 2020</div><br><br>
+          </section>
+          <div class="current">
+            <div class="temp">15<span>°F</span></div>
+            <div class="weather-icon">
+              <img src="../src/assets/icons/unknown.png" alt="">
+          </div>
+            <div class="weather">Sunny</div>
+            <div class="hi-low">Min 13°F / Max 16°F</div>
+            <div class="feels">Feels like 16°F</div>
+            <br>
+            <div class="pressure" title="Pressure">1005 hPa</div>
+    
+            <div class="humidity" title="Humidity">89 %</div>
+    
+            <div class="wind" title="Wind speed"> 2 m/s</div>   
+    </div>
+    <div class="item item-2">
+        <div class="block8" title="">
+            <p class="text-center">Sunrise:<br><p></p>
+            <div class="sun1">------</div>
+            <p class="text-center">Sunset:<br><p></p>
+            <div class="sun2">------</div>
+  
+            <br><br>
+  
+            <div class="latitude">00.0000 </div>
+            <div class="longtude">00.0000</div><br><br>   
+          </div>
+    </div>
+    <div class="item item-3"> </div>
+  </div>
+  <button onclick="initFavs()">Add to favorites</button>
+  <form name="f1">
+    Город:<br>
+    <select name="town" id="s1">
+      
+    </select>
+    <input type="button" onclick="f()" value="ok">
+    </form>
+</main>
+<script src="../main.js"></script>
+</body>
+</html>

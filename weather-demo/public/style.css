@@ -1,0 +1,81 @@
+/* header {
+    position: absolute;
+    height: 80px;
+
+} */
+.search-box {
+position: absolute;
+width: 487px;
+height: 40px;
+left: 41%;
+top: 20px;
+background: #EDEDED;
+border-radius: 8px;
+}
+.lang {
+position: absolute;
+width: 26px;
+height: 26px;
+left: 73.5%;
+top: 27px;
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+
+
+color: #000000;
+}
+/* .theme-box{
+    position: absolute;
+    width: 67px;
+    height: 36px;
+    left: 1523px;
+    top: 23px;
+    
+    background: #EDEDED;
+    border-radius: 8px;
+} */
+.logo {
+position: absolute;
+width: 174px;
+height: 30px;
+left: 280px;
+top: 25px;
+
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+line-height: 130%;
+/* identical to box height, or 30px */
+color: #000000;
+}
+main {
+    background: blue;
+    width: 64%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    background-color: blueviolet;
+    border-radius: 2px;
+    min-height: 80px;
+}
+.container {
+    display: grid;
+    column-gap: 10px;
+  row-gap: 15px;
+  }
+  .item {
+    background: gray;
+      min-height: 40px;
+      column-gap: 10px;
+      row-gap: 15px;
+  }
+  .item item-1{
+height: 446px;
+  }

@@ -1,0 +1,31 @@
+{
+  "name": "weather-demo",
+  "version": "0.0.1",
+  "description": "Weather App Widget",
+  "main": "public/index.js",
+  "scripts": {
+    "test": "node server.js",
+    "dev": "webpack serve",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uivision/praktika_2021.git"
+  },
+  "keywords": [
+    "Weather"
+  ],
+  "author": "18 ITD group 2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uivision/praktika_2021/issues"
+  },
+  "homepage": "https://github.com/uivision/praktika_2021#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
